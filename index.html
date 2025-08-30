@@ -40,6 +40,7 @@
             color: #777;
             margin-bottom: 20px;
         }
+        /* 캘린더 영역 스타일 */
         .calendar-section {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -47,9 +48,10 @@
             margin-bottom: 30px;
             background-color: #fafafa;
         }
+        /* 캘린더 iframe 크기 */
         .calendar-iframe {
             width: 100%;
-            height: 600px;
+            height: 700px; /* 기본 높이를 700px로 변경 */
             border: none;
             overflow: hidden;
             border-radius: 8px;
@@ -92,6 +94,7 @@
             background-color: #2c3e50;
             border-color: #2c3e50;
         }
+        /* 모바일 화면 (600px 이하)에서의 캘린더 iframe 크기 */
         @media (max-width: 600px) {
             .container {
                 padding: 15px;
@@ -102,6 +105,9 @@
             .button-link {
                 font-size: 1.2rem;
                 padding: 15px;
+            }
+            .calendar-iframe {
+                height: 450px; /* 모바일에서 높이를 450px로 변경 */
             }
         }
     </style>
